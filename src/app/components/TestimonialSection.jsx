@@ -25,10 +25,11 @@ const TestimonialSection = () => {
   return (
     <section className="bg-[#1e1e1e] container  mx-auto py-12 ">
       <div
-        className="flex flex-wrap mb-12  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
+        className="flex border flex-wrap mb-12  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
         style={{
           backgroundImage:
             "linear-gradient(180deg, #FFFFFF15 , #D9D9D90B), url('/bottom.png')",
+          borderColor: "rgba(255, 255, 255, 0.2)",
         }}
       >
         {[
@@ -58,15 +59,27 @@ const TestimonialSection = () => {
                 backgroundPosition: "center",
               }}
             >
-              <div className="absolute top-0 left-6 transform -translate-y-6 flex space-x-2">
-                <div className="w-4 h-4 bg-purple-600"></div>
-                <div className="w-4 h-4 bg-pink-600"></div>
-              </div>
               <div className="flex flex-col space-y-4">
                 {/* Star Ratings */}
-                <div className="text-white">
-                  {"★".repeat(testimonial.stars)}
-                  {"☆".repeat(5 - testimonial.stars)}
+                <div className="flex justify-between">
+                  <div className="text-white">
+                    {"★".repeat(testimonial.stars)}
+                    {"☆".repeat(5 - testimonial.stars)}
+                  </div>
+                  <div className="flex gap-4">
+                    <div
+                      className="w-8 h-14 -mt-14 bg-purple-600"
+                      style={{
+                        clipPath: "polygon(0 0, 100% 41%, 100% 100%, 0% 100%)",
+                      }}
+                    ></div>
+                    <div
+                      className="w-8 h-14 -mt-14 bg-pink-600"
+                      style={{
+                        clipPath: "polygon(0 0, 100% 41%, 100% 100%, 0% 100%",
+                      }}
+                    ></div>
+                  </div>
                 </div>
                 {/* Review */}
                 <p className="text-white text-sm sm:text-base">

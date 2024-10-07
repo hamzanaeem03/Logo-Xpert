@@ -24,10 +24,11 @@ const PlayToEarn = () => {
         </h1>
       </div>
       <div
-        className="flex flex-wrap  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
+        className="flex flex-wrap border bg-opacity-50 backdrop-blur-xl py-4 justify-evenly text-white text-xs lg:text-base font-bold "
         style={{
           backgroundImage:
             "linear-gradient(180deg, #FFFFFF15 , #D9D9D90B), url('/bottom.png')",
+          borderColor: "rgba(255, 255, 255, 0.2)",
         }}
       >
         {[

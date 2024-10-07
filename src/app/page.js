@@ -9,6 +9,7 @@ import PricingCard from "./components/PricingCards";
 import TestimonialSection from "./components/TestimonialSection";
 import Bottom from "./components/Bottom";
 import Footer from "./components/Footer";
+import HeroStrip from "./components/HeroStrip";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="container mx-auto ">
         <Navbar />
         <HeroSection />
+        <HeroStrip className="overflow-visible z-100 absolute	" />
         <Cards />
         <Investing />
         <PlayToEarn />

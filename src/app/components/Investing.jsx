@@ -35,7 +35,7 @@ const Investing = () => {
         <div className="flex justify-center items-center">
           <button>
             <a
-              className="bg-gradient-to-r from-[#FFFFFF15] mx-4 to-[#D9D9D90B] border border-[#FFFFFF33] text-white relative inline-block font-medium drop-shadow-md	 px-6 py-4 sm:py-5 sm:px-5 rounded-xl text-[9px] md:text-sm"
+              className="bg-gradient-to-r from-[#FFFFFF15] mx-4 to-[#D9D9D90B] border border-[#FFFFFF33] text-white relative inline-block font-medium drop-shadow-md	px-8 py-4  rounded-xl text-[9px] md:text-sm"
               style={{
                 fontFamily: "Lato, sans-serif",
 
@@ -54,7 +54,7 @@ const Investing = () => {
           </button>{" "}
           <button>
             <a
-              className="bg-gradient-to-r from-[#D903B3] to-[#62C6FF] mx-4 text-white relative inline-block font-medium px-6 py-4 sm:py-5 sm:px-5 rounded-xl text-[9px] md:text-sm"
+              className="bg-gradient-to-r from-[#D903B3] to-[#62C6FF] mx-4 text-white relative inline-block font-medium px-8 py-4 rounded-xl text-[9px] md:text-sm"
               style={{
                 fontFamily: "Lato, sans-serif",
 
@@ -63,7 +63,7 @@ const Investing = () => {
             >
               <span
                 style={{
-                  transform: "skew(20deg)", 
+                  transform: "skew(20deg)",
                 }}
                 className="font-extrabold "
               >

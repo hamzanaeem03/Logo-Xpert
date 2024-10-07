@@ -25,27 +25,28 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
-      </div>
+        {/* <div
+          className="flex flex-wrap mt-[-100px] bg-opacity-90 backdrop-blur-xl  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
+          style={{
+            // backgroundImage:
+            //   "linear-gradient(180deg, #968ad1 , #2b2640)",
+            transform: "rotate(-1deg)",
+            transformOrigin: "right center",
+          }}
+        >
+          {[
+            "GAMING SPANING",
+            "ACTION - PACKED",
+            "MIND - BENDING",
+            "COLLECTION OG GAMES",
+          ].map((text, index) => (
+            <span key={index} className="flex justify-evenly w-1/4">
+              <img height={20} width={20} src={"/Star 1.svg"} />
 
-      <div
-        className="flex flex-wrap  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, #968ad1 , #2b2640), url('/bottom.png')",
-        }}
-      >
-        {[
-          "GAMING SPANING",
-          "ACTION - PACKED",
-          "MIND - BENDING",
-          "COLLECTION OG GAMES",
-        ].map((text, index) => (
-          <span key={index} className="flex justify-evenly w-1/4">
-            <img height={20} width={20} src={"/Star 1.svg"} />
-
-            {text}
-          </span>
-        ))}
+              {text}
+            </span>
+          ))}
+        </div> */}
       </div>
     </section>
   );

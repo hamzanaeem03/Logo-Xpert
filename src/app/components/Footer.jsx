@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="container h-[200px] mx-auto flex flex-col items-center justify-center bg-[url('/footer-img.png')] py-16 px-8 text-white">
+    <section className="container h-[200px] mx-auto flex flex-col items-center justify-center bg-[url('/footer-img.png')] bg-bottom py-16 px-8 text-white">
       <div className="text-center">
         <a href="/" className="flex items-center">
           <img
-            src="/Frame.png" 
+            src="/Frame.png"
             alt="Logo"
             className="lg:h-[50px] lg:w-[50px] h-[30px] w-[30px]"
           />
