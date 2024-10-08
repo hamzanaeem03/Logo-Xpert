@@ -1,4 +1,5 @@
 import React from "react";
+import ReusableButton from "./ReusableButton";
 
 const VirtualReality = () => {
   return (
@@ -35,25 +36,13 @@ const VirtualReality = () => {
             visuals to convey excitement, adventure, and the immersive nature of
             gaming.
           </p>
-          <button>
-            <a
-              className="bg-gradient-to-r from-[#D903B3] to-[#62C6FF] mt-10 text-white relative inline-block px-8 py-4  rounded-xl text-[9px] md:text-sm"
-              style={{
-                fontFamily: "Lato, sans-serif",
-
-                transform: "skew(-20deg)",
-              }}
-            >
-              <span
-                style={{
-                  transform: "skew(20deg)", // Reverse skew for text
-                }}
-                className="font-bold "
-              >
-                PLAY NOW{" "}
-              </span>
-            </a>
-          </button>{" "}
+          <ReusableButton
+            text="PLAY NOW"
+            link="#"
+            background="linear-gradient(to right, #D903B3, #62C6FF)"
+            className="my-8"
+            textColor="white"
+          />
         </div>
       </div>
     </div>

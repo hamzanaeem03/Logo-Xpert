@@ -17,7 +17,14 @@ export default function Home() {
       <div className="container mx-auto ">
         <Navbar />
         <HeroSection />
-        <HeroStrip className="overflow-visible z-100 absolute	" />
+        <HeroStrip
+          style={{
+            transform: "rotate(-2deg)",
+            transformOrigin: "right center",
+            borderColor: "rgba(255, 255, 255, 0.2)",
+          }}
+          additionalClasses="relative z-10 mt-[-100px] bg-opacity-90 backdrop-blur-xl"
+        />
         <Cards />
         <Investing />
         <PlayToEarn />

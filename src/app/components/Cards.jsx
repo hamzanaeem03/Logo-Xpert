@@ -1,3 +1,5 @@
+import ReusableButton from "./ReusableButton";
+
 const Cards = () => {
   return (
     <section
@@ -78,23 +80,13 @@ const Cards = () => {
           ))}
         </div>
       </div>
-      <button
-        className="bg-gradient-to-r from-[#FFFFFF15] to-[#D9D9D90B] border border-[#FFFFFF33] mt-14 text-white relative inline-block font-medium drop-shadow-md	px-8 py-4 rounded-xl text-[9px] md:text-sm"
-        style={{
-          fontFamily: "Lato, sans-serif",
-
-          transform: "skew(-20deg)",
-        }}
-      >
-        <span
-          style={{
-            transform: "skew(20deg)", // Reverse skew for text
-          }}
-          className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#D903B3] to-[#62C6FF]"
-        >
-          VIEW MORE{" "}
-        </span>
-      </button>{" "}
+      <ReusableButton
+        text="VIEW MORE"
+        link="#"
+        background="linear-gradient(to right, #FFFFFF15, #D9D9D90B)"
+        className="mt-14"
+        textColor="transparent"
+      />
     </section>
   );
 };

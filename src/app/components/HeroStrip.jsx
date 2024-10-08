@@ -1,14 +1,17 @@
 import React from "react";
 
-const HeroStrip = () => {
+const HeroStrip = ({ style, backgroundImage, additionalClasses }) => {
+  const defaultStyles = {
+    borderColor: "rgba(255, 255, 255, 0.2)",
+    ...style,
+  };
+
   return (
     <div
-      className="flex border relative z-10 flex-wrap mt-[-100px] bg-opacity-90 backdrop-blur-xl  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
+      className={`flex border flex-wrap py-4 justify-evenly text-white text-xs lg:text-base font-bold ${additionalClasses}`}
       style={{
-        // backgroundImage: "url('/imagebg.png')",
-        transform: "rotate(-2deg)",
-        transformOrigin: "right center",
-        borderColor: "rgba(255, 255, 255, 0.2)",
+        ...defaultStyles,
+        backgroundImage,
       }}
     >
       {[
@@ -19,7 +22,6 @@ const HeroStrip = () => {
       ].map((text, index) => (
         <span key={index} className="flex justify-evenly w-1/4">
           <img height={20} width={20} src={"/Star 1.svg"} />
-
           {text}
         </span>
       ))}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import ReusableButton from "./ReusableButton";
 
 const Navbar = () => {
   return (
@@ -9,23 +10,13 @@ const Navbar = () => {
           <Image src={"/Frame.png"} alt="Logo" height={28} width={28} />
           <span className=" text-md font-primary font-bold">360 LogoXpert</span>
         </div>
-        <button
-          className="bg-gradient-to-r from-[#D903B3] to-[#62C6FF] text-white relative inline-block font-medium px-8 py-4  rounded-xl text-[9px] md:text-sm"
-          style={{
-            fontFamily: "Lato, sans-serif",
-
-            transform: "skew(-20deg)",
-          }}
-        >
-          <span
-            style={{
-              transform: "skew(20deg)", // Reverse skew for text
-            }}
-            className="font-extrabold "
-          >
-            GET A QUOTE
-          </span>
-        </button>{" "}
+        <ReusableButton
+          text="GET A QUOTE"
+          link="#"
+          background="linear-gradient(to right, #D903B3, #62C6FF)"
+          className=""
+          textColor="white"
+        />
       </nav>
     </div>
   );

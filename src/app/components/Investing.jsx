@@ -1,4 +1,5 @@
 import React from "react";
+import ReusableButton from "./ReusableButton";
 
 const Investing = () => {
   return (
@@ -33,44 +34,21 @@ const Investing = () => {
           minim veniam.
         </p>
         <div className="flex justify-center items-center">
-          <button>
-            <a
-              className="bg-gradient-to-r from-[#FFFFFF15] mx-4 to-[#D9D9D90B] border border-[#FFFFFF33] text-white relative inline-block font-medium drop-shadow-md	px-8 py-4  rounded-xl text-[9px] md:text-sm"
-              style={{
-                fontFamily: "Lato, sans-serif",
+          <ReusableButton
+            text="VIEW MORE"
+            link="#"
+            background="linear-gradient(to right, #FFFFFF15, #D9D9D90B)"
+            className="mx-4"
+            textColor="transparent"
+          />
 
-                transform: "skew(-20deg)",
-              }}
-            >
-              <span
-                style={{
-                  transform: "skew(20deg)", // Reverse skew for text
-                }}
-                className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#D903B3] to-[#62C6FF]"
-              >
-                VIEW MORE{" "}
-              </span>
-            </a>
-          </button>{" "}
-          <button>
-            <a
-              className="bg-gradient-to-r from-[#D903B3] to-[#62C6FF] mx-4 text-white relative inline-block font-medium px-8 py-4 rounded-xl text-[9px] md:text-sm"
-              style={{
-                fontFamily: "Lato, sans-serif",
-
-                transform: "skew(-20deg)",
-              }}
-            >
-              <span
-                style={{
-                  transform: "skew(20deg)",
-                }}
-                className="font-extrabold "
-              >
-                GET A QUOTE
-              </span>
-            </a>
-          </button>{" "}
+          <ReusableButton
+            text="GET A QUOTE"
+            link="#"
+            background="linear-gradient(to right, #D903B3, #62C6FF)"
+            className="mx-4"
+            textColor="white"
+          />
         </div>
       </div>
 

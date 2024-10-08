@@ -1,4 +1,5 @@
 import React from "react";
+import HeroStrip from "./HeroStrip";
 
 const TestimonialSection = () => {
   const testimonials = [
@@ -8,7 +9,7 @@ const TestimonialSection = () => {
       review:
         "One of the standout features of this gaming website is its extensive library of game guides and tutorials. It has helped me level up my skills, conquer challenging quests, and discover hidden secrets within games. The guides are comprehensive, easy to follow, and have undoubtedly elevated my gaming performance.",
       stars: 5,
-      image: "/test1.png", // Adjust with the actual image path
+      image: "/test1.png", 
       verified: true,
     },
     {
@@ -24,29 +25,14 @@ const TestimonialSection = () => {
 
   return (
     <section className="bg-[#1e1e1e] container  mx-auto py-12 ">
-      <div
-        className="flex border flex-wrap mb-12  py-4 justify-evenly text-white text-xs lg:text-base font-bold "
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, #FFFFFF15 , #D9D9D90B), url('/bottom.png')",
-          borderColor: "rgba(255, 255, 255, 0.2)",
-        }}
-      >
-        {[
-          "GAMING SPANING",
-          "ACTION - PACKED",
-          "MIND - BENDING",
-          "COLLECTION OG GAMES",
-        ].map((text, index) => (
-          <span key={index} className="flex justify-evenly w-1/4">
-            <img height={20} width={20} src={"/Star 1.svg"} />
-
-            {text}
-          </span>
-        ))}
-      </div>
+      <HeroStrip
+        style={{ borderColor: "rgba(255, 255, 255, 0.2)" }}
+        backgroundImage={
+          "linear-gradient(180deg, #FFFFFF15 , #D9D9D90B), url('/bottom.png')"
+        }
+        additionalClasses="mb-12"
+      />
       <div className="max-w-6xl mx-auto">
-        {/* Testimonials */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {testimonials.map((testimonial, idx) => (
             <div
@@ -60,7 +46,6 @@ const TestimonialSection = () => {
               }}
             >
               <div className="flex flex-col space-y-4">
-                {/* Star Ratings */}
                 <div className="flex justify-between">
                   <div className="text-white">
                     {"★".repeat(testimonial.stars)}
@@ -81,11 +66,9 @@ const TestimonialSection = () => {
                     ></div>
                   </div>
                 </div>
-                {/* Review */}
                 <p className="text-white text-sm sm:text-base">
                   {testimonial.review}
                 </p>
-                {/* User Info */}
                 <div className="flex items-center space-x-4">
                   <img
                     src={testimonial.image}
@@ -100,14 +83,12 @@ const TestimonialSection = () => {
                       {testimonial.company}
                     </p>
                   </div>
-                  {/* Verified Badge */}
                   {testimonial.verified && (
                     <span className="ml-auto text-white text-sm flex items-center">
-                      {/* Replace the circle with a check sign image */}
                       <img
-                        src="/Cyan.png" // Adjust with the actual path of the image
+                        src="/Cyan.png"
                         alt="Verified"
-                        className="w-5 h-5 mr-1" // Adjust the size accordingly
+                        className="w-5 h-5 mr-1"
                       />
                       Verified
                     </span>
@@ -118,7 +99,6 @@ const TestimonialSection = () => {
           ))}
         </div>
 
-        {/* Pagination */}
         <div className="flex justify-center mt-8 space-x-2">
           <span className="w-3 h-3 bg-white rounded-full"></span>
           <span className="w-3 h-3 bg-purple-500 rounded-full"></span>
