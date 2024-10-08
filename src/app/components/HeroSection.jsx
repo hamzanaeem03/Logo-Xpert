@@ -20,7 +20,7 @@ const HeroSection = () => {
             >
               Into Interesting
             </p>
-            <p className="text-transparent font-primary 2xl:text-8xl xl:text-7xl  lg:text-6xl md:text-5xl sm:text-4xl text-3xl font-normal bg-clip-text bg-gradient-to-r from-[#D903B3] to-[#62C6FF]">
+            <p className="text-transparent font-primary 2xl:text-8xl xl:text-7xl  lg:text-6xl md:text-5xl sm:text-4xl pb-1 text-3xl font-normal bg-clip-text bg-gradient-to-r from-[#D903B3] to-[#62C6FF]">
               Logo Design
             </p>
           </div>
